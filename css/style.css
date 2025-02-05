@@ -60,13 +60,13 @@ body {
     height: 70px;
     margin-top: 0;
     padding-left: 32px;
-    padding-right: 6px;
+    padding-right: 9px;
     display: flex;
 }
 
 .main-header a button{
     border-radius: 42px;
-    padding: 18px 34px;
+    padding: 16px 34px;
     background-color: var(--btnRowborder);
     border: none;
     color: var(--absolute);
