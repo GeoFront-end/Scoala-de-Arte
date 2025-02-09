@@ -450,12 +450,6 @@ body {
     padding-inline: 1rem;
 }
 
-@media(min-width:767px){
-    .wrapper{
-        max-width: 48rem;
-    }
-}
-
 @media(min-width:767px) and (max-width: 991px) {
     .wrapper{
         max-width: 48rem;
