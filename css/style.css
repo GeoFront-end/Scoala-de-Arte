@@ -604,7 +604,7 @@ body {
     overflow: hidden;
     padding: var(--_panel-padding);
     padding-right: calc(var(--_panel-padding) * 4);
-    border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
+    border-radius: 17px;
     --_panel-color: rgb(245, 247, 247);
     transition: flex-basis 500ms;
 }
@@ -679,6 +679,40 @@ body {
     }
 }
 
+.price-holder{
+    flex-basis: 31%;
+    background: #394694;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.price-holder .name{
+    font-weight: 400;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+.price-holder .price{
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-left: 1vw;
+}
+
+.price-grid{
+    width: 88%;
+    height: auto;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+}
+
 input,
 textarea{
     font-family: 'Poppins', sans-serif;
@@ -693,6 +727,7 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: var(--btnRowborder) solid 9px;
 }
 
 .form{
@@ -704,6 +739,29 @@ textarea{
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+}
+
+@media(max-width: 767px) {
+    .form{
+        height: auto;
+    }
+}
+
+@media(max-width: 991px) {
+    .price-grid{
+        width: 88%;
+        height: auto;
+        display: flex;
+        margin-inline: auto;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 659px) {
+    .price-grid{
+        flex-direction: column;
+    }
 }
 
 .contact-form{
@@ -950,6 +1008,32 @@ textarea::placeholder{
     .btn{
         padding: 0.45rem 1.2rem;
     }
+}
+
+.map-holder{
+    width: 88%;
+    height: auto;
+}
+
+.map-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    color: #8fa9fd;
+    margin-bottom: 1rem;
+}
+
+.map{
+    border-radius: 23px;
+    height: 70vh;
+    width: 100%;
+}
+
+iframe{
+    border-radius: 23px;
+    height: 70vh;
+    width: 100%;
 }
 
 .footer{
