@@ -680,16 +680,19 @@ body {
 }
 
 .price-holder{
-    flex-basis: 31%;
     background: #394694;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
-    display: flex;
+    display: grid;
     padding: 1rem;
+    height: calc(1rem + 1rem + 2.5rem + 1rem);
     justify-content: space-between;
+}
+
+.price-holder:not(:last-child) {
+    margin-right: 2rem;
 }
 
 .price-holder .name{
@@ -701,8 +704,8 @@ body {
 
 .price-holder .price{
     font-weight: 800;
-    font-size: 1.7rem;
-    margin-left: 1vw;
+    font-size: 2.5rem;
+    margin-left: calc();
 }
 
 .price-grid{
@@ -710,7 +713,7 @@ body {
     height: auto;
     display: flex;
     margin-inline: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 input,
@@ -739,7 +742,7 @@ textarea{
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 70vh;
+    height: auto;
 }
 
 @media(max-width: 767px) {
@@ -762,6 +765,180 @@ textarea{
     .price-grid{
         flex-direction: column;
     }
+    .price-holder{
+        display: flex;
+        height: auto;
+    }
+    .price-holder:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+.tag-list{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.img-list{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    padding: 1rem;
+    background: #8fa9fd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem rgba(0, 0 ,0, 0.1);
+}
+
+.img-list li {
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+li img{
+    height: 9rem;
+    width: auto;
+    border-radius: 0.5rem;
+}
+
+.scroller {
+    max-width: 88%;
+    margin-inline: auto;
+}
+
+.scroller__inner{
+    padding-block: 1em;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, var(--bg) 15%, var(--bg) 85%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, var(--bg) 15%, var(--bg) 85%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+@keyframes scroll {
+    to{
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+.creatie{
+    width: 100%;
+}
+
+#specialitate{
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+select{
+    appearance: none;
+}
+
+#form-rowline{
+    display: flex;
+    justify-content: space-between;
+}
+
+#varsta-elev{
+    width: 95%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-right: 0.25rem;
+}
+
+#localitate{
+    width: 95%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-left: 0.25rem;
+}
+
+.gender{
+    text-align: center;
+}
+
+#female,
+#male{
+    display: none;
+}
+.female{
+    width: 95%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-right: 0.25rem;
+    text-align: center;
+}
+
+.male{
+    width: 95%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-left: 0.25rem;
+    text-align: center;
+}
+
+.female .radio__input:checked + .radio__label,
+.male .radio__input:checked + .radio__label{
+    background: #c9d6ff;
+    color: #8fa9fd;
 }
 
 .contact-form{
@@ -1113,7 +1290,7 @@ ul{
     flex-basis: 31%;
     background: #eff3ff;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;

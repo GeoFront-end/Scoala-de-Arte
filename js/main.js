@@ -87,6 +87,29 @@ function toggleAccordion(panelToActivate) {
     panelToActivate.querySelector('.accordion-content').setAttribute('aria-hidden', false);
 }
 
+
+const scrollers = document.querySelectorAll(".scroller");
+
+if(!window.matchMedia("(prefers-reduced-motion: reduse)").matches){
+    addAnimation();
+}
+
+function addAnimation() {
+    scrollers.forEach(scroller => {
+        scroller.setAttribute('data-animated', true);
+
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach(item => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+        });
+    });
+}
+
+
 const yearElement = document.getElementById("current-year");
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
