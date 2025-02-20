@@ -761,8 +761,12 @@ textarea {
   height: auto;
 }
 
+.scroller.gallery{
+    padding-top: 80px;
+}
+
 li img {
-  height: 9rem;
+  height: 19rem;
   width: auto;
   border-radius: 0.5rem;
 }
@@ -777,6 +781,7 @@ li img {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .scroller[data-animated="true"] {
