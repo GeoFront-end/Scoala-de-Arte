@@ -1,19 +1,22 @@
-Web site pentru concursul Tekwill Junior Ambassadors
+Website în cadrul concursului Tekwill Junior Ambassadors & pentru utilizarea de către Școala de Arte Criuleni
 
-Rapeșco Gheorghe----Iurco Egor
+GitHub Repository: https://github.com/GeoFront-end/Scoala-de-Arte.git
+GitHub live: https://geofront-end.github.io/Scoala-de-Arte/
 
-GitHub: https://geofront-end.github.io/Scoala-de-Arte/
-
-Websiteul este adaptat pe dispozitivele:
+Website-ul este full adaptat numai pe dispozitivele:
 1. iPhone SE
 2. iPhone XR
 3. iPhone 12 Pro
 4. iPhone 14Pro Max
 5. Pixel 7
 6. Samsung S20 Ultra
-7. Samsung Galaxy Z Fold 5
-8. Nesthub Max
+7. Samsung Galaxy Z Fold 5(Continuous si Folded)
 
-!!Websiteul a fost programat pe lungimea standart (in px) a laptopurilor
+* Website-ul este adaptat parțial pe alte dispozitive 
 
-Școala de Arte Criuleni
+* Websiteul a fost elaborat pe lungimea ecranului MacBook Air (standard: 2560 x 1600)
+
+
+Realizat: Rapeșco Gheorghe
+
+© Școala de Arte Criuleni
