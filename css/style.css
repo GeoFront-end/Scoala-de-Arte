@@ -156,7 +156,7 @@ section{
 .hero img{
   height: 73vh;
   object-fit: cover;
-  filter: brightness(70%);
+  filter: brightness(90%);
 }
 
 .heroText{
@@ -389,7 +389,7 @@ section{
   display: flex;
   flex-direction: column;
   background: url(../images/aboutHero.png);
-  filter: brightness(70%);
+  filter: brightness(90%);
   object-fit: cover;
   align-items: center;
   justify-content: center;
@@ -400,13 +400,15 @@ section{
   width: 80%;
   font-size: 6rem;
   text-align: center;
-  color: #f3f3f3;
+  color: #ffffff;
+  filter: brightness(100%);
 }
 .aboutHero p{
   font-family: var(--inherit);
   width: 60%;
   text-align: center;
   color: #ffffffca;
+  filter: brightness(100%);
 }
 .history{
   height: auto;
@@ -1549,7 +1551,6 @@ iframe {
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
-  opacity: 0.3;
 }
 
 .holder:hover {
