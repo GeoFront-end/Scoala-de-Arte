@@ -1,4 +1,4 @@
-Website în cadrul concursului Tekwill Junior Ambassadors & pentru utilizarea de către Școala de Arte Criuleni
+Website realizat în cadrul concursului Tekwill Junior Ambassadors & pentru utilizarea de către Școala de Arte Criuleni
 
 GitHub Repository: https://github.com/GeoFront-end/Scoala-de-Arte.git
 GitHub live: https://geofront-end.github.io/Scoala-de-Arte/
@@ -24,6 +24,6 @@ Website-ul este full adaptat numai pe dispozitivele:
 * Websiteul a fost elaborat pe lungimea ecranului MacBook Air (standard: 2560 x 1600)
 
 
-Realizat: Rapeșco Gheorghe
+Realizat: Rapeșco Gheorghe, Croitor Ionuț
 
 © Școala de Arte Criuleni
